@@ -35,7 +35,7 @@ DROP TABLE dept_emp;
 CREATE TABLE dept_emp (
 	emp_no INTEGER,
 	dept_no VARCHAR,
-	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
 
